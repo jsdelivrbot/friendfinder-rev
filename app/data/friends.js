@@ -1,12 +1,13 @@
 // ===============================================================================
 // DATA
+// Below data will hold all of the possible friends.
 // ===============================================================================
 
 
 var friends = [
   {
-    name: "Tim Lincecum",
-    photo: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/230557/01.jpg",
+    name: "Ahmed",
+    photo: "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAq7AAAAJDAwYzI4NTQ4LWYwZWUtNGFkYS1hNTYwLTZjYzkwY2ViZDA3OA.jpg",
     scores: [
       "5",
       "1",
@@ -21,8 +22,8 @@ var friends = [
     ]
   },
   {
-    name: "Buster Posey",
-    photo: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/230557/02.jpg",
+    name: "Jacob Deming",
+    photo: "https://pbs.twimg.com/profile_images/691785039043022849/oWsy8LNR.jpg",
     scores: [
       "4",
       "2",
@@ -37,8 +38,8 @@ var friends = [
     ]
   },
   {
-    name: "Barry Bonds",
-    photo: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/230557/03.jpg",
+    name: "Jeremiah Scanlon",
+    photo: "https://avatars2.githubusercontent.com/u/8504998?v=3&s=460",
     scores: [
       "5",
       "2",
@@ -53,8 +54,8 @@ var friends = [
     ]
   },
   {
-    name: "Willie McCovey",
-    photo: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/230557/04.jpg",
+    name: "Louis T. Delia",
+    photo: "https://pbs.twimg.com/profile_images/639214960049000449/lNCRC-ub.jpg",
     scores: [
       "3",
       "3",
@@ -69,8 +70,8 @@ var friends = [
     ]
   },
   {
-    name: "Willie Mays",
-    photo: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/230557/05.jpg",
+    name: "Lou Ritter",
+    photo: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAkDAAAAJDhhZTI5NTk2LWQzZjUtNDJjZi1hMTM2LTQ3ZjNmYjE0YmY2NA.jpg",
     scores: [
       "4",
       "3",
@@ -85,8 +86,8 @@ var friends = [
     ]
   },
   {
-    name: "Juan Marichal",
-    photo: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/230557/02.jpg",
+    name: "Jordan Biason",
+    photo: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAisAAAAJGUxYzc4YzA0LWQxMzUtNGI4NS04YTFiLTkwYzM0YTZkNzA2NA.jpg",
     scores: [
       "4",
       "4",
@@ -103,5 +104,5 @@ var friends = [
 
 ];
 
-
+// Here we export the array. This makes it accessible to other files using require.
 module.exports = friends;
