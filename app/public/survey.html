@@ -213,6 +213,7 @@
     // Capture the form inputs
     $("#submit").on("click", function(event) {
       event.preventDefault();
+      console.log("Submit button has been clicked");
 
       // Form validation
       function validateForm() {
@@ -259,7 +260,7 @@
           $("#match-name").text(data.name);
           $("#match-img").attr("src", data.photo);
 
-          // Show the modal with the best match
+          console.log("Post has been sent");
           $("#results-modal").modal("toggle");
 
         });
