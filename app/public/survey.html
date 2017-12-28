@@ -244,6 +244,8 @@
           $("#matchName").text(data.name);
           $('#matchImg').attr("src", data.photo);
 
+          console.log("Name is " + data.name + ". Image source is " + data.photo);
+
           // Show the modal with the best match 
           $("#resultsModal").modal('toggle');
 
