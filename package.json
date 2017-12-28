@@ -16,10 +16,6 @@
     "node-sass-middleware": "^0.11.0",
     "path": "^0.12.7"
   },
-  //"devDependencies": {
-  //  "request": "^2.81.0",
-  //  "tape": "^4.7.0"
-  //},
   "repository": {
     "type": "git",
     "url": "https://git.heroku.com/friendfinder-rev.git"
