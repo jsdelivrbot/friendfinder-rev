@@ -253,7 +253,8 @@
           ]
         };
 
-        var thisWindow = window.location.origin;
+        var thisWindow = "https://friendfinder-rev.herokuapp.com";
+        console.log(thisWindow);
 
         // AJAX post the data to the friends API.
         $.post(thisWindow + "/api/friends", userData, function(data) {
