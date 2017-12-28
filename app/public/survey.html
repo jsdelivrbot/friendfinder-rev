@@ -238,7 +238,7 @@
         console.log("currentURL");
 
         // AJAX post the data to the friends API. 
-        $.post(currentURL + "/api/friends", userData, function(data){
+        $.post("/api/friends", userData, function(data){
 
           // Grab the result from the AJAX post so that the best match's name and photo are displayed.
           $("#matchName").text(data.name);
