@@ -13,7 +13,7 @@ var PORT = process.env.PORT || 5000
 var app = express();
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/nvd.api+json" }));
 
