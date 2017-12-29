@@ -1,10 +1,15 @@
-$primary: green;
-$secondary: yellow;
+$orange: #FD5A1E;
+$cream: #FFFDD0;
+$black: #000000;
+
+$primary: $orange;
+$secondary: $black;
+$tertiary: $cream;
 
 .jumbotron {
-	background-color: $primary;
+	background-color: $tertiary;
 }
 
 #surveyHeading {
-	background-color: $secondary;
+	color: $primary;
 }
