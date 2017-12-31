@@ -4,7 +4,6 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var path = require('path');
-var sassMiddleware = require('node-sass-middleware');
 var PORT = process.env.PORT || 5000
 
 // ========================================================================
