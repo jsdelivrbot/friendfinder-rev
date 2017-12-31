@@ -1,2 +1,45 @@
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  margin-bottom: 60px; }
+
+main {
+  padding-top: 75px; }
+
 footer {
-  background-color: green; }
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px; }
+
+.navbar-dark.bg-dark,
+.navbar-brand {
+  color: #fffdd0; }
+
+#questionList li {
+  margin-bottom: 30px; }
+
+.jumbotron {
+  background-color: #fffdd0; }
+
+.jumbotron .btn-primary {
+  background-color: #fd5a1e;
+  border-color: #fd5a1e; }
+  .jumbotron .btn-primary:hover {
+    background-color: #ca4818;
+    border-color: #ca4818; }
+  .jumbotron .btn-primary:active {
+    background-color: #983612;
+    border-color: #983612; }
+  .jumbotron .btn-primary:focus {
+    background-color: #65240c;
+    border-color: #65240c;
+    outline-color: #983612; }
+
+.jumbotron .btn-primary:not([disabled]):not(.disabled):active {
+  background-color: #65240c;
+  border-color: #65240c;
+  outline-color: #983612; }
