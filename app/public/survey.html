@@ -3,19 +3,20 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>FriendFinder</title>
+  <title>FriendFinder Revised</title>
 
-  <!-- Latest compiled and minified CSS & JS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 
-    <!--custom styles-->
+  <!--custom styles-->
   <link rel="stylesheet" href="./custom.css" type="text/css">
 
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
-  <!-- Font Awesome Glyphicons -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <!-- Bootstrap 4 Js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
 
   <!-- Chosen -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
@@ -226,25 +227,21 @@
       return isValid;
     }
 
-    // If all required fields are filled
+    // Form Validation
     if (validateForm() == true)
     {
-      // Create an object for the user's data
+      // Data Input by User
         var userData = {
           name: $("#name").val(),
           photo: $("#photo").val(),
           scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val(), ]
         }
 
+        var baseURL = window.location.origin;
+        console.log(baseURL);
 
-        // Grab the URL of the website
-        var currentURL = window.location.origin;
-        console.log(currentURL);
+         $.post(baseURL + "/api/friends", userData, function(data){
 
-        // AJAX post the data to the friends API. 
-        $.post(currentURL + "/api/friends", userData, function(data){
-
-          // Grab the result from the AJAX post so that the best match's name and photo are displayed.
           $("#match-name").text(data.name);
           $('#match-img').attr("src", data.photo);
 
