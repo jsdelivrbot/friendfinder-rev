@@ -10,3 +10,7 @@ npm-debug.log
 # Docker
 Dockerfile
 docker-compose.yml
+
+# SCSS
+*.scss
+app/public/assets/css/scss-modules
