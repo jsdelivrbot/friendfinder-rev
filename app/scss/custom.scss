@@ -6,10 +6,23 @@ $primary: $orange;
 $secondary: $black;
 $tertiary: $cream;
 
-.jumbotron {
-	background-color: $tertiary;
+html {
+	position: relative;
+	min-height: 100%;
 }
 
-#surveyHeading {
-	color: $primary;
+body {
+	margin-bottom: 60px;
+}
+
+main {
+	padding-top: 75px;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
 }
