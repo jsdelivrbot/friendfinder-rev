@@ -17,6 +17,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/nvd.api+json" }));
 
+// For Static Assets
+// =============================================================
+
+app.use(express.static('app/public'));
+
 
 // ========================================================================
 // ROUTER

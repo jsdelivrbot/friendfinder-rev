@@ -8,7 +8,8 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
-    "test": "node test.js"
+    "test": "node test.js",
+    "scss-compile": "node-sass -o app/public/assets/css app/public/assets/css/custom.scss -w"
   },
   "dependencies": {
     "body-parser": "^1.18.2",
