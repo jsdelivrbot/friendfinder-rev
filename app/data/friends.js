@@ -7,7 +7,7 @@
 var friends = [
   {
     name: "Matt Cain",
-    photo: "./assets/images/cain.jpg",
+    photo: "./assets/images/cain.png",
     scores: [
       "5",
       "4",
@@ -23,7 +23,7 @@ var friends = [
   },
   {
     name: "Tim Lincecum",
-    photo: "./assets/images/lincecum.jpg",
+    photo: "./assets/images/lincecum.png",
     scores: [
       "5",
       "5",
@@ -39,7 +39,7 @@ var friends = [
   },
   {
     name: "Sergio Romo",
-    photo: "./assets/images/romo.jpg",
+    photo: "./assets/images/romo.png",
     scores: [
       "5",
       "4",
@@ -55,7 +55,7 @@ var friends = [
   },
   {
     name: "Bruce Bochy",
-    photo: "./assets/images/bochy.jpg",
+    photo: "./assets/images/bochy.png",
     scores: [
       "5",
       "2",
@@ -71,7 +71,7 @@ var friends = [
   },
   {
     name: "Madison Bumgarner",
-    photo: "./assets/images/bumgarner.jpg",
+    photo: "./assets/images/bumgarner.png",
     scores: [
       "5",
       "4",
@@ -87,7 +87,7 @@ var friends = [
   },
   {
     name: "Ryan Vogelsong",
-    photo: "./assets/images/vogelsong.jpg",
+    photo: "./assets/images/vogelsong.png",
     scores: [
       "1",
       "5",
@@ -103,7 +103,7 @@ var friends = [
   },
   {
     name: "Buster Posey",
-    photo: "./assets/images/posey.jpg",
+    photo: "./assets/images/posey.png",
     scores: [
       "5",
       "3",
@@ -119,7 +119,7 @@ var friends = [
   },
   {
     name: "Pablo Sandoval",
-    photo: "./assets/images/sandoval.jpg",
+    photo: "./assets/images/sandoval.png",
     scores: [
       "5",
       "4",

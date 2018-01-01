@@ -33,6 +33,8 @@
          $.post(baseURL + "/api/friends", userData, function(data){
 
           $("#match-name").text(data.name);
+          $('#match-img').attr("title", data.name);
+          $('#match-img').attr("alt", data.name);
           $('#match-img').attr("src", data.photo);
 
           console.log("Name is " + data.name + ". Image source is " + data.photo);
