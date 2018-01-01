@@ -8,12 +8,18 @@ body {
 main {
   padding-top: 75px; }
 
-footer {
+.footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 60px;
   line-height: 60px; }
+
+.footer p {
+  text-align: center; }
+
+.footer a {
+  color: #333333; }
 
 .navbar-dark.bg-dark,
 .navbar-brand {
@@ -25,21 +31,20 @@ footer {
 .jumbotron {
   background-color: #fffdd0; }
 
-.jumbotron .btn-primary {
+.jumbotron .btn-primary, #submit {
   background-color: #fd5a1e;
   border-color: #fd5a1e; }
-  .jumbotron .btn-primary:hover {
+  .jumbotron .btn-primary:hover, #submit:hover {
     background-color: #ca4818;
     border-color: #ca4818; }
-  .jumbotron .btn-primary:active {
+  .jumbotron .btn-primary:active, #submit:active {
     background-color: #983612;
     border-color: #983612; }
-  .jumbotron .btn-primary:focus {
-    background-color: #65240c;
-    border-color: #65240c;
-    outline-color: #983612; }
 
-.jumbotron .btn-primary:not([disabled]):not(.disabled):active {
+.jumbotron .btn-primary:not([disabled]):not(.disabled):active,
+.jumbotron .btn-primary:not([disabled]):not(.disabled):focus,
+#submit:active,
+#submit:focus {
   background-color: #65240c;
   border-color: #65240c;
   outline-color: #983612; }

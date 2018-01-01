@@ -69,7 +69,7 @@
                 You were on the first team to bring a World Series trophy to San Francisco.
               </div><!--column-->
               <div class="col-12">
-                <select class="chosen-select" id="q1">
+                <select id="q1">
                   <option value=""></option>
                   <option value="1">1 (Strongly Disagree)</option>
                   <option value="2">2</option>
@@ -85,7 +85,7 @@
                 You like to smoke pot.
               </div><!--column-->
               <div class="col-12">
-                <select class="chosen-select" id="q2">
+                <select id="q2">
                   <option value=""></option>
                   <option value="1">1 (Strongly Disagree)</option>
                   <option value="2">2</option>
@@ -101,7 +101,7 @@
                 You played on all 3 championship teams in San Francisco.
               </div><!--column-->
               <div class="col-12">
-                <select class="chosen-select" id="q3">
+                <select id="q3">
                   <option value=""></option>
                   <option value="1">1 (Strongly Disagree)</option>
                   <option value="2">2</option>
@@ -117,7 +117,7 @@
                 You threw a perfect game.
               </div><!--column-->
               <div class="col-12">
-                <select class="chosen-select" id="q4">
+                <select id="q4">
                   <option value=""></option>
                   <option value="1">1 (Strongly Disagree)</option>
                   <option value="2">2</option>
@@ -133,7 +133,7 @@
                 You struck out Miguel Cabrera looking to end the 2012 World Series.
               </div><!--column-->
               <div class="col-12">
-                <select class="chosen-select" id="q5">
+                <select id="q5">
                   <option value=""></option>
                   <option value="1">1 (Strongly Disagree)</option>
                   <option value="2">2</option>
@@ -149,7 +149,7 @@
                 You hit a grandslam off of Matt Latos to help eliminate Cincinnati in 2012.
               </div><!--column-->
               <div class="col-12">
-                <select class="chosen-select" id="q6">
+                <select id="q6">
                   <option value=""></option>
                   <option value="1">1 (Strongly Disagree)</option>
                   <option value="2">2</option>
@@ -165,7 +165,7 @@
                 You closed game 7.
               </div><!--column-->
               <div class="col-12">
-                <select class="chosen-select" id="q7">
+                <select id="q7">
                   <option value=""></option>
                   <option value="1">1 (Strongly Disagree)</option>
                   <option value="2">2</option>
@@ -181,7 +181,7 @@
                 You were a starting pitcher in the 2012 World Series.
               </div><!--column-->
               <div class="col-12">
-                <select class="chosen-select" id="q8">
+                <select id="q8">
                   <option value=""></option>
                   <option value="1">1 (Strongly Disagree)</option>
                   <option value="2">2</option>
@@ -197,7 +197,7 @@
                 You scored the winning run in game 7 of the 2014 World Series.
               </div><!--column-->
               <div class="col-12">
-                <select class="chosen-select" id="q9">
+                <select id="q9">
                   <option value=""></option>
                   <option value="1">1 (Strongly Disagree)</option>
                   <option value="2">2</option>
@@ -232,12 +232,14 @@
       <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">
        Submit</button>
 
+    </main>
+
       <hr>
-      <footer class="footer">
-        <div class="container">
-          <p class="text-center"><a href="/api/friends">API Friends List</a> | <a href="https://github.com/afhaque/friendfinder">GitHub Repo</a></p>
-        </div>
-      </footer>
+    <footer class="footer">
+      <div class="container">
+        <p class="text-center"><a href="/api/friends">API Friends List</a> | <a href="https://github.com/airgead73/friendfinder-rev" target="_blank">GitHub Repo</a></p>
+      </div>
+    </footer>
 
     </div>
 
@@ -248,12 +250,13 @@
         <!-- Modal content-->
         <div class="modal-content">
           <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            
             <h2 class="modal-title"><strong>Best Match</strong></h2>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
           </div>
           <div class="modal-body">
-            <h2 id="match-name"></h2>
-            <img id="match-img" src="" alt="">
+            <h3 id="match-name" class="text-center"></h3>
+            <img class="rounded mx-auto d-block" id="match-img" src="" alt="">
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -262,7 +265,8 @@
 
       </div>
     </div>
-  </main>
+
+ 
 
   <script type="text/javascript" src="./assets/js/app.js"></script>
 
