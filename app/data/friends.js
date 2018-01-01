@@ -6,101 +6,136 @@
 
 var friends = [
   {
-    name: "Willie McCovey",
-    photo: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/230557/01.jpg",
+    name: "Matt Cain",
+    photo: "./assets/images/cain.jpg",
     scores: [
       "5",
-      "1",
-      "4",
       "4",
       "5",
-      "1",
-      "2",
       "5",
-      "4",
+      "1",
+      "1",
+      "1",
+      "5",
+      "1",
       "1"
     ]
   },
   {
-    name: "Johnnie LeMaster",
-    photo: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/230557/02.jpg",
+    name: "Tim Lincecum",
+    photo: "./assets/images/lincecum.jpg",
     scores: [
-      "4",
-      "2",
+      "5",
+      "5",
+      "5",
       "5",
       "1",
-      "3",
-      "2",
-      "2",
       "1",
-      "3",
-      "2"
+      "1",
+      "1",
+      "1",
+      "1"
     ]
   },
   {
-    name: "Will Clark",
-    photo: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/230557/03.jpg",
+    name: "Sergio Romo",
+    photo: "./assets/images/romo.jpg",
+    scores: [
+      "5",
+      "4",
+      "5",
+      "1",
+      "5",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1"
+    ]
+  },
+  {
+    name: "Bruce Bochy",
+    photo: "./assets/images/bochy.jpg",
     scores: [
       "5",
       "2",
-      "2",
-      "2",
-      "4",
       "1",
-      "3",
-      "2",
-      "5",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
       "5"
     ]
   },
   {
-    name: "Barry Bonds",
-    photo: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/230557/04.jpg",
+    name: "Madison Bumgarner",
+    photo: "./assets/images/bumgarner.jpg",
     scores: [
-      "3",
-      "3",
+      "5",
       "4",
-      "2",
-      "2",
+      "5",
       "1",
-      "3",
-      "2",
-      "2",
-      "3"
+      "5",
+      "1",
+      "1",
+      "5",
+      "5",
+      "1"
     ]
   },
   {
-    name: "Jason Schmidt",
-    photo: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/230557/05.jpg",
+    name: "Ryan Vogelsong",
+    photo: "./assets/images/vogelsong.jpg",
     scores: [
-      "4",
-      "3",
-      "4",
       "1",
       "5",
-      "2",
-      "5",
-      "3",
       "1",
-      "4"
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "5",
+      "1"
     ]
   },
   {
-    name: "Matt Cain",
-    photo: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/230557/06.jpg",
+    name: "Buster Posey",
+    photo: "./assets/images/posey.jpg",
     scores: [
-      "4",
-      "4",
-      "2",
+      "5",
       "3",
-      "2",
-      "2",
-      "3",
-      "2",
+      "5",
+      "1",
+      "1",
+      "5",
+      "1",
+      "1",
+      "1",
+      "1"
+    ]
+  },
+  {
+    name: "Pablo Sandoval",
+    photo: "./assets/images/sandoval.jpg",
+    scores: [
+      "5",
       "4",
-      "5"
+      "5",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "5",
+      "1"
     ]
   }
+
+
+
 
 ];
 
