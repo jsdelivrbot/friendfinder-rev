@@ -18,10 +18,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
 
-  <!-- Chosen -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
-
 </head>
 
 <body>
@@ -30,7 +26,6 @@
     <nav class="navbar navbar-dark bg-dark">
       <div class="container">
         <a class="navbar-brand" href="/home" title="Click for homepage">
-          <!--<img src="/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">-->
           Giant Finder 
         </a>
         <h3>Survey Questionaire</h3>
@@ -269,76 +264,7 @@
     </div>
   </main>
 
-  <script type="text/javascript">
-
-
-    // Chosen CSS
-    var config = {
-      '.chosen-select'           : {},
-      '.chosen-select-deselect'  : {allow_single_deselect:true},
-      '.chosen-select-no-single' : {disable_search_threshold:10},
-      '.chosen-select-no-results': {no_results_text:'Oops, nothing found!'},
-      '.chosen-select-width'     : {width:"95%"}
-    }
-    for (var selector in config) {
-      $(selector).chosen(config[selector]);
-    }
-
-    // Capture the form inputs 
-    $("#submit").on("click", function(){
-
-      // Form validation
-      function validateForm() {
-      var isValid = true;
-      $('.form-control').each(function() {
-        if ( $(this).val() === '' )
-            isValid = false;
-      });
-
-      $('.chosen-select').each(function() {
-
-        if( $(this).val() === "")
-          isValid = false
-      })
-      return isValid;
-    }
-
-    // Form Validation
-    if (validateForm() == true)
-    {
-      // Data Input by User
-        var userData = {
-          name: $("#name").val(),
-          photo: $("#photo").val(),
-          scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val(), ]
-        }
-
-        var baseURL = window.location.origin;
-        console.log(baseURL);
-
-         $.post(baseURL + "/api/friends", userData, function(data){
-
-          $("#match-name").text(data.name);
-          $('#match-img').attr("src", data.photo);
-
-          console.log("Name is " + data.name + ". Image source is " + data.photo);
-
-          // Show the modal with the best match 
-          $("#results-modal").modal('toggle');
-
-        });
-    }
-    else
-    {
-      alert("Please fill out all fields before submitting!");
-    }
-      
-      return false;
-    });
-
-
-  
-  </script>
+  <script type="text/javascript" src="./assets/js/app.js"></script>
 
 </body>
 
