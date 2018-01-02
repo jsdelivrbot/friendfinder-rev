@@ -9,7 +9,7 @@
             isValid = false;
       });
 
-      $('.chosen-select').each(function() {
+      $('select').each(function() {
 
         if( $(this).val() === "")
           isValid = false
@@ -39,14 +39,13 @@
 
           console.log("Name is " + data.name + ". Image source is " + data.photo);
 
-          // Show the modal with the best match 
-          $("#results-modal").modal('toggle');
+             $("#results-modal").modal('toggle');
 
         });
     }
     else
     {
-      alert("Please fill out all fields before submitting!");
+      alert("Please fill out all fields.");
     }
       
       return false;

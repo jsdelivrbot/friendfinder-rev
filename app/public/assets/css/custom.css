@@ -1,50 +1,79 @@
+/* base */
+
 html {
-  position: relative;
-  min-height: 100%; }
+    position: relative;
+    min-height: 100%;
+}
 
 body {
-  margin-bottom: 60px; }
+    margin-bottom: 60px;
+}
 
 main {
-  padding-top: 75px; }
+    padding-top: 75px;
+}
 
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 60px;
-  line-height: 60px; }
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+}
 
 .footer p {
-  text-align: center; }
+    text-align: center;
+}
 
 .footer a {
-  color: #333333; }
+    color: #333333;
+}
+
+
+/* nav */
 
 .navbar-dark.bg-dark,
 .navbar-brand {
-  color: #fffdd0; }
+    color: #fffdd0;
+}
+
+
+/* survey */
 
 #questionList li {
-  margin-bottom: 30px; }
+    margin-bottom: 30px;
+}
+
+
+/* jumbotron */
 
 .jumbotron {
-  background-color: #fffdd0; }
+    background-color: #fffdd0;
+}
 
-.jumbotron .btn-primary, #submit {
-  background-color: #fd5a1e;
-  border-color: #fd5a1e; }
-  .jumbotron .btn-primary:hover, #submit:hover {
+.jumbotron .btn-primary,
+#submit {
+    background-color: #fd5a1e;
+    border-color: #fd5a1e;
+}
+
+.jumbotron .btn-primary:hover,
+#submit:hover {
     background-color: #ca4818;
-    border-color: #ca4818; }
-  .jumbotron .btn-primary:active, #submit:active {
+    border-color: #ca4818;
+}
+
+.jumbotron .btn-primary:active,
+#submit:active {
     background-color: #983612;
-    border-color: #983612; }
+    border-color: #983612;
+}
 
 .jumbotron .btn-primary:not([disabled]):not(.disabled):active,
 .jumbotron .btn-primary:not([disabled]):not(.disabled):focus,
 #submit:active,
 #submit:focus {
-  background-color: #65240c;
-  border-color: #65240c;
-  outline-color: #983612; }
+    background-color: #65240c;
+    border-color: #65240c;
+    outline-color: #983612;
+}

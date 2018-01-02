@@ -6,7 +6,7 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "/../public/survey.html"));
   });
 
-  // If no matching route is found default to home
+  // default route
   app.get("*", function(req, res) {
     res.sendFile(path.join(__dirname, "/../public/home.html"));
   });

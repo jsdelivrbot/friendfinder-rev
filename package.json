@@ -1,7 +1,7 @@
 {
   "name": "giant-finder",
   "version": "0.3.0",
-  "description": "Revision of FriendFinder Homework assignment: 12/22/17",
+  "description": "Revision of FriendFinder Homework assignment",
   "engines": {
     "node": "8.9.1"
   },
